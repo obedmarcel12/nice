@@ -854,6 +854,10 @@ video {
   width: 70vw;
 }
 
+.w-\[110\%\] {
+  width: 110%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1241,6 +1245,30 @@ video {
 
   .md\:h-\[9vh\] {
     height: 9vh;
+  }
+
+  .md\:h-\[105vh\] {
+    height: 105vh;
+  }
+
+  .md\:h-\[120vh\] {
+    height: 120vh;
+  }
+
+  .md\:h-\[100vh\] {
+    height: 100vh;
+  }
+
+  .md\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .md\:h-\[109vh\] {
+    height: 109vh;
+  }
+
+  .md\:h-\[95vh\] {
+    height: 95vh;
   }
 
   .md\:w-\[100\%\] {
