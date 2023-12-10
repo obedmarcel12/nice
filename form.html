@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <main
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url(./src/images/view-new-york-city-night-time.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 60px;
+      "
+    >
+      <nav
+        class="sm: w-[100%] sm: h-[100%] sm: p-[20px]   md:w-[60%] rounded-[10px] shadow-2xl md:h-[100%] md:relative md:left-[20%] bg-[whitesmoke] md:p-[30px]"
+      >
+        <div class="text-center p-[0px] font-black font-serif">
+          <h1 class="font-black">Register Form</h1>
+        </div>
+
+        <div class="sm: font-medium   font-serif md:font-black">
+          full name <br />
+          <input
+            type="text"
+            placeholder="Enter full name"
+            class="border-[1px] border-slate-500 sm: h-[6vh]  sm: w-[70vw] shadow-xl md:w-[52vw] md:h-[6.5vh] rounded-[10px] pl-4  outline-none"
+          />
+        </div>
+
+        <div class="font-serif md:flex gap-2 pt-3">
+          <div class=" sm: font-medium      md:font-black">
+            phone number <br />
+
+            <input
+              type="number"
+              placeholder="Enter your phone number"
+              class="border-[1px] border-slate-500 sm: h-[6vh]  sm: w-[70vw] shadow-xl md:w-[26vw] outline-none md:h-[6.5vh] rounded-[10px] pl-4"
+            />
+          </div>
+
+          <div class=" sm: font-medium sm: p-3   md:p-0   md:font-black">
+            Birth Date <br />
+            <input
+              type="date"
+              id="send"
+              oninput="result.value = send.value"
+              class="border-[1px]  border-slate-500 outline-none sm: h-[6vh]  sm: w-[70vw] shadow-xl md:w-[25vw] md:h-[6.5vh] rounded-[10px] pl-4"
+            />
+          </div>
+        </div>
+
+        <div class="sm: pt-3 font-serif md:p-[7px]">
+          <h1 class="sm: font-medium  md:font-black">Gender</h1>
+          <div class="flex sm: gap-[5vh] sm: w-[90vw] md:w-[50vw] md:gap-[17vh]">
+            <div class="md:text-[3vh] sm: text-[1.7vh]">
+              <input type="radio" name="gender" value="Male" />
+              male
+            </div>
+
+            <div class="md:text-[3vh] sm: text-[1.7vh]">
+              <input type="radio" name="gender" value="Male" />
+              female
+            </div>
+
+            <div class="md:text-[3vh] sm: text-[1.7vh]">
+              <input type="radio" name="gender" value="Male" />
+              prefer not to say
+            </div>
+          </div>
+        </div>
+
+        <div class=" sm: font-medium font-serif md:font-black">
+          <h1 class="sm: font-medium sm: pt-3  md:pt-0 md:font-black">Address</h1>
+
+          <div class="p-[7px]">
+            <input
+              type="text"
+              placeholder="Enter street address"
+              class="border-[1px] border-slate-500 shadow-xl md:w-[52vw] sm: w-[70vw] sm: h-[6vh] md:h-[6.5vh] rounded-[10px] pl-4  outline-none"
+            />
+          </div>
+        </div>
+
+        <div class="md:flex md:flex-row sm: flex-col sm: flex sm: gap-4 md:gap-10 pl-[10px] pt-2">
+          <select
+            class="font-serif font-black border-[1px] sm: h-[6vh]  border-slate-500 shadow-xl md:w-[28vw] md:h-[6.5vh] rounded-[10px] pl-4 outline-none"
+          >
+            <option hidden="">country</option>
+            <option>usa</option>
+            <option>china</option>
+            <option>japan</option>
+            <option>uk</option>
+          </select>
+
+          <div class="font-black">
+            <input
+              type="text"
+              placeholder="Enter your city"
+              class="border-[1px] border-slate-500 shadow-xl sm: h-[6vh] md:w-[26vw]  md:h-[6.5vh] rounded-[10px] pl-4 outline-none"
+            />
+          </div>
+        </div>
+
+        <div class="pt-6 font-serif sm: font-medium  md:font-black flex sm: justify-center sm: items-center ">
+          <input
+            type="submit"
+            value="Submit"
+            class="border-[1px] sm: w-[39vw]  sm: text-[white] md:text-[black] sm: h-[5vh] border-slate-500 bg-slate-700 shadow-xl md:w-[52vw] md:h-[6.5vh] rounded-[10px] md:pl-4 outline-none"
+          />
+        </div>
+      </nav>
+    </main>
+  </body>
+</html>

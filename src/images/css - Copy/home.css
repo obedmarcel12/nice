@@ -1,0 +1,20 @@
+main{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url(../images/Marcel\ Ruiz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.animation{
+    animation: foot 2s 2s infinite alternate-reverse;
+    overflow: hidden;
+
+}
+@keyframes foot{
+    from{
+    width: 4px;
+    }
+
+}
+to{
+    width: 100px;
+}
